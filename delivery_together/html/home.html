@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <title>게시판</title>
+  </head>
+  <body>
+    <div class="welcome">
+      <span id="nickname"></span>
+      <span>
+        <button type="button" id="btn-registerAddress"
+          onclick="location.href='registerAddress.html'">주소등록
+        </button>
+        </span>
+      <span><button type="button" id="btn-logout">로그아웃</button></span>
+      <span>
+        <button type="button" id="btn-modify"
+          onclick="location.href='editUser.html'">회원수정
+        </button></span>
+      <span><button type="button" id="btn-delete">회원탈퇴</button></span>
+    </div>
+    <br />
+    <div class="container">
+      <div class="logo">
+        <img
+          id="logo"
+          src="../img/logo.png"
+          rel="stylesheet"
+          width="270px"
+          height="150px"
+        />
+      </div>
+      <div class="board_title">
+        <h2>게시판</h2>
+      </div>
+
+      <div class="col-auto text-end">
+        <select id="category">
+          <option>카테고리</option>
+          <option id="korean" value="한식">한식</option>
+          <option id="chinese" value="중식">중식</option>
+          <option id="japanese" value="돈까스/회/일식">돈까스/회/일식</option>
+          <option id="westurn" value="피자/양식">피자/양식</option>
+          <option id="asian" value="아시안">아시안</option>
+          <option id="jokbo" value="족발/보쌈">족발/보쌈</option>
+          <option id="meat" value="고기/구이">고기/구이</option>
+          <option id="chicken" value="치킨">치킨</option>
+          <option id="snack" value="분식">분식</option>
+          <option id="dessert" value="카페/디저트">카페/디저트</option>
+          <option id="etc" value="기타">기타</option>
+        </select>
+        <button type="button" id="btn-searchCategory">검색</button>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>가게이름</th>
+            <th>카테고리</th>
+            <th>현재인원</th>
+            <th>모집인원</th>
+            <th>작성자</th>
+            <th>작성일</th>
+            <th>거리</th>
+          </tr>
+        </thead>
+        <tbody id="recruitmentsList">
+          
+        </tbody>
+      </table>
+      <div class="col-auto text-end">
+        <a href="registerPost.html" class="btn btn-dark">게시물 등록</a>
+      </div>
+    </div>
+    <script type="text/javascript" src="../js/home.js"></script>
+  </body>
+</html>

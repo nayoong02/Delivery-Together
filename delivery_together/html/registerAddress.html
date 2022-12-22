@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="../css/address.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <title>회원주소 등록</title>
+  </head>
+  <body>
+    <div class="board_wrap">
+      <div class="board_title">
+        <strong>회원주소 등록하기</strong>
+        <p>배달을 희망하는 주소를 입력하세요.</p>
+      </div>
+
+      <div class="board_write_wrap">
+        <div class="board_write">
+          <div class="name">
+            <dl>
+              <dt>
+                <input type="text" placeholder="입력" name="address" id="input" />
+              </dt>
+              <dd>
+                <input class="btn btn-dark" type="button" value="검색" id="searchBtn" />
+              </dd>
+              <!-- <dt>
+                <input type="text" placeholder="상세주소" name="address" id="detail" />
+              </dt> -->
+            </dl>
+          </div>
+          <div class="cost">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="sticky">장소명</th>
+                  <th class="sticky">도로명 주소</th>
+                </tr>
+              </thead>
+              <tbody id="addressList">
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bt_view_wrap">
+      <input class="btn btn-dark" type="button" value="등록" id="registerBtn"/>
+      <input
+        class="btn btn-dark"
+        type="button"
+        value="취소"
+        onclick="location.href='home.html'"
+      />
+    </div>
+    
+    <script type="text/javascript" src="../js/registerAddress.js"></script>
+
+  </body>
+</html>

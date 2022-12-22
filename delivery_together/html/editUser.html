@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="../css/board.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <title>회원정보수정</title>
+  </head>
+  <body>
+    <div class="board_wrap">
+      <div class="board_title">
+        <strong>회원정보 수정하기</strong>
+        <p>원하는 항목을 수정하세요.</p>
+      </div>
+      <div class="board_write_wrap">
+        <div class="board_write">
+          <div class="name">
+            <dl>
+              <dt>닉네임</dt>
+              <dd>
+                <input type="text" placeholder="닉네임 입력" name="nickname" id="nickname" />
+              </dd>
+            </dl>
+          </div>
+          <div class="cost">
+            <dl>
+              <dt>이메일</dt>
+              <dd>
+                <input
+                  type="text"
+                  placeholder="이메일 주소 입력"
+                  name="email"
+                  id="email"
+                />
+              </dd>
+            </dl>
+          </div>
+          <div class="count">
+            <dl>
+              <dt>비밀번호</dt>
+              <dd>
+                <input
+                  type="password"
+                  placeholder="비밀번호 입력"
+                  name="password"
+                  id="password"
+                />
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bt_view_wrap">
+      <input class="btn" type="button" value="수정" id="editBtn"/>
+      <input
+        class="btn"
+        type="button"
+        value="취소"
+        onclick="location.href='home.html'"
+      />
+    </div>
+    <script type="text/javascript" src="../js/editUser.js"></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="../css/chatRoom.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
+    />
+    <title>채팅방</title>
+  </head>
+  <body>
+    <div id="chat-body">
+      <!-- 닫기 버튼 -->
+      <div class="setting_bar">
+        <a href="home.html" class="btn-exit">🗙</a>
+      </div>
+      <!-- 프로필 사진, 프로필명 -->
+      <header>
+        <img class="profile-img" src="../img/default_profile.png" />
+        <div class="profile-col">
+          <span id="profile-name" class="profile-name">익명</span>
+        </div>
+      </header>
+      <main>
+        <!-- 채팅 내용 시작 -->
+        <div id="chat-content" class="chat-content">
+          <!-- 메시지 시작 날짜 -->
+          <!-- <div class="date-line">
+            <time datetime="2022-12-15">2022년 12월 15일 수요일</time>
+          </div> -->
+          <!-- 채팅 내용 -->
+          <div id="main-chat" class="main-chat">
+
+          </div>
+        </div>
+        <!-- 채팅 입력창 -->
+        <div class="insert-content">
+          <form name="chatform">
+            <textarea name="chat-insert" id="send-area" required></textarea>
+            <input type="button" id="send-button" class="chat-submit" value="전송" />
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    <script type="text/javascript" src="../js/chat.js"></script>
+  </body>
+</html>

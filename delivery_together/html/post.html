@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="../css/board.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <title>상세조회</title>
+  </head>
+
+  <body>
+    <div class="view_wrap">
+      <div class="view_title">
+        <strong>게시글 상세보기</strong>
+      </div>
+      <div class="view_content">
+        <dl>
+          <dt>가게이름</dt>
+          <dd id="restaurantName"></dd>
+        </dl>
+        <dl>
+          <dt>카테고리</dt>
+          <dd id="category"></dd>
+        </dl>
+        <dl>
+          <dt>최소주문금액</dt>
+          <dd id="minimumOrderAmount"></dd>
+        </dl>
+        <dl>
+          <dt>현재주문금액</dt>
+          <dd id="currentAmout"></dd>
+        </dl>
+        <dl>
+          <dt>배달료</dt>
+          <dd id="deliveryCharge"></dd>
+        </dl>
+        <dl>
+          <dt>인원</dt>
+          <dd id="count"></dd>
+        </dl>
+      </div>
+    </div>
+    
+    <div class="bt_view_wrap">
+      <input
+        class="btn btn-dark"
+        type="button"
+        value="목록으로"
+        onclick="location.href='home.html'"
+      />
+      <input class="btn btn-dark" type="button" value="글 수정" id="modifyBtn" onclick="moveEditPage()"/>
+      <input class="btn btn-dark" type="button" value="글 삭제" id="deleteBtn"/>
+      <input class="btn btn-dark" type="button" value="신청" id="attendBtn"/>
+      <input class="btn btn-dark" type="button" value="신청 취소" id="leaveBtn"/>
+      <input class="btn btn-dark" type="button" value="채팅" id="chatBtn"/>
+    </div>
+    <script type="text/javascript" src="../js/recruitment.js"></script>
+  </body>
+</html>

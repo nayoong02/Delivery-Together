@@ -1,0 +1,38 @@
+#category {
+  margin-bottom: 15px;
+}
+
+#btn-searchCategory,
+#btn-registerAddress,
+#btn-logout,
+#btn-modify,
+#btn-delete {
+  border: 1px solid #000000;
+  border-radius: 3px;
+}
+
+#btn-write {
+  background: #000;
+  color: #fff;
+}
+
+.table {
+  text-align: center;
+  border: 1.5px solid #dddddd;
+}
+
+.table thead {
+  background-color: #eeeeee;
+  text-align: center;
+}
+
+.welcome {
+  float: right;
+  margin-right: 40px;
+  margin-top: 10px;
+}
+
+#logo {
+  margin-left: 400px;
+  display: block;
+}

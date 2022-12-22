@@ -1,0 +1,130 @@
+html {
+    font-size: 10px;
+  }
+  
+  .board_wrap {
+    width: 800px;
+    margin: 40px auto;
+  }
+  
+  .board_title {
+    margin-bottom: 20px;
+  }
+  
+  .board_title strong {
+    font-size: 3rem;
+  }
+  
+  .board_title p {
+    margin-top: 5px;
+    font-size: 1.5rem;
+  }
+  
+  .bt_wrap {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0;
+  }
+  
+  .bt_view_wrap {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0;
+  }
+  
+  .bt_view_wrap .btn {
+    display: inline-block;
+    min-width: 50px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    background: rgb(0, 0, 0);
+    color: #fff;
+  }
+  
+  .board_write {
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+  }
+  
+  .board_write .name,
+  .board_write .cost {
+    padding: 15px;
+  }
+  
+  .board_write .name dt,
+  .board_write .name dd,
+  .board_write .cost dt,
+  .board_write .cost dd {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.4rem;
+  }
+  
+  .board_write .name {
+    border-bottom: 1.5px dashed #ddd;
+    font-size: 0;
+  }
+  
+  .board_write .name dl {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+    margin-bottom: 0%;
+  }
+  
+  .board_write .cost {
+    border-bottom: 1.5px dashed #ddd;
+    padding-bottom: 7px;
+    padding-top: 15px;
+  }
+  
+  .board_write .cost dl {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .board_write .title dl {
+    font-size: 0;
+  }
+  
+  #input, 
+  #detail {
+    width: 300px;
+    margin-right: 20px;
+  }
+  
+  .cost .table {
+    text-align: center;
+    font-size: 1.4rem;
+    position: relative;
+    overflow-y: scroll;
+    max-height: 150px;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .cost .table thead {
+    background-color: #eeeeee;
+    text-align: center;
+    width: 300px;
+    border-bottom: 1px solid #000;
+  }
+  
+  .table thead tr th {
+    position: sticky;
+    top: 0;
+    background: #ebeaea;
+  }
+  .table thead tr th,
+  .table tbody tr td {
+    padding: 15px 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #dedede;
+    border-right: 1px solid #ddd;
+    word-break: break-all;
+  }
+  

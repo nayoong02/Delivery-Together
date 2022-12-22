@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/board.css" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <title>게시글 등록</title>
+  </head>
+  <body>
+    <div class="board_wrap">
+      <div class="board_title">
+        <strong>게시판 글쓰기</strong>
+        <p>아래 항목들을 빠짐 없이 입력하세요.</p>
+      </div>
+
+      <div class="board_write_wrap">
+        <div class="board_write">
+          <div class="name">
+            <dl>
+              <dt>가게이름</dt>
+              <dd>
+                <input
+                  type="text"
+                  placeholder="가게이름 입력"
+                  name="restaurant"
+                  id="restaurantName"
+                />
+              </dd>
+            </dl>
+            <dl>
+              <dt>카테고리</dt>
+              <dd>
+                <select id="category">
+                  <option>선택</option>
+                  <option name="korean" value="한식">한식</option>
+                  <option name="chinese" value="중식">중식</option>
+                  <option name="japanese" value="돈까스/회/일식">돈까스/회/일식</option>
+                  <option name="westurn" value="피자/양식">피자/양식</option>
+                  <option name="asian" value="아시안">아시안</option>
+                  <option name="jokbo" value="족발/보쌈">족발/보쌈</option>
+                  <option name="meat" value="고기/구이">고기/구이</option>
+                  <option name="chicken" value="치킨">치킨</option>
+                  <option name="snack" value="분식">분식</option>
+                  <option name="dessert" value="카페/디저트">카페/디저트</option>
+                  <option name="etc" value="기타">기타</option>
+                </select>
+              </dd>
+            </dl>
+          </div>
+          <div class="cost">
+            <dl>
+              <dt>최소주문금액</dt>
+              <dd>
+                <input
+                  type="number"
+                  min="0"
+                  placeholder="최소주문금액 입력"
+                  name="minimumOrderAmount"
+                  id = "minimumOrderAmount"
+                />
+                원
+              </dd>
+            </dl>
+            <dl>
+              <dt>현재주문금액</dt>
+              <dd>
+                <input
+                  type="number"
+                  min="0"
+                  placeholder="현재주문금액 입력"
+                  name="money"
+                  id="money"
+                />
+                원
+              </dd>
+            </dl>
+            <dl>
+              <dt>배달료</dt>
+              <dd>
+                <input
+                  type="number"
+                  min="0"
+                  placeholder="배달료 입력"
+                  name="deliveryCharge"
+                  id="deliveryCharge"
+                />
+                원
+              </dd>
+            </dl>
+          </div>
+          <div class="count">
+            <dl>
+              <dt>모집인원</dt>
+              <dd>
+                <input
+                  type="number"
+                  min="1"
+                  placeholder="모집인원 입력"
+                  name="headCount"
+                  id="headCount"
+                />
+                명
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bt_view_wrap">
+      <input class="btn btn-dark" type="button" value="등록" id="registerBtn"/>
+      <input
+        class="btn btn-dark"
+        type="button"
+        value="목록으로"
+        onclick="location.href='home.html'"
+        id="cancleBtn"
+      />
+    </div>
+  
+    <script type="text/javascript" src="../js/registerPost.js"></script>
+  </body>
+</html>
