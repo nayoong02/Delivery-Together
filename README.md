@@ -2,15 +2,20 @@
 
 ## 🗒️ Summary
 - 2022년도 2학기(6학기) 소프트웨어공학 과목 팀(2인) 텀프로젝트
-- 배달 공구 시스템 구현
+- 배달 공동구매 시스템 구현
 - 회원 계정은 웹사이트를 통해 주소 등록 후 게시물 등록 가능
 - 등록된 회원 주소와 1km 반경 이내에 등록된 게시물에 한해 조회, 검색, 모집 신청, 채팅 기능 이용 가능
 - 채팅 후 같은 음식점에서 배달을 같이 시킬 수 있음 (배달료 1/n)
 
 ## 🛠 Tech
-- MYSQL, H2 DBMS
-- Spring framework
+- MySQL DBMS
+- Spring Framework
+- HTML/CSS, JavaScript
 - IDE VSCode, Intellij
+
+## 🙋‍♀️ Role
+- UX/UI 디자인
+- Frontend
 
 ## 📸 ScreenShots
 
